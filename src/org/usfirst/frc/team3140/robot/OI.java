@@ -35,6 +35,6 @@ public class OI {
     // until it is finished as determined by it's isFinished method.
     // button.whenReleased(new ExampleCommand());
 	
-	// I AM A STEGOSAURUS1
+	// I AM A STEGOSAURUS
 }
 
