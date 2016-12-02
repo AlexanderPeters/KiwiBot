@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class ExampleSubsystem extends Subsystem {
     
-	int a;
+	int a = 1;
 	
 	String mystring=("kys");
 	
