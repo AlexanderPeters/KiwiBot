@@ -16,6 +16,7 @@ public class DriveTrain extends Subsystem {
 	public TalonSRX rightMotorA = new TalonSRX(RobotMap.rightMotorA);
 	public TalonSRX leftMotorB = new TalonSRX(RobotMap.leftMotorB);
 	public TalonSRX rightMotorB = new TalonSRX(RobotMap.rightMotorB);
+	
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
