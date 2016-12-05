@@ -11,8 +11,8 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class ExampleSubsystem extends Subsystem {
     
-	TalonSRX leftmotor = new TalonSRX(RobotMap.leftmotor);
-	TalonSRX rightmotor = new TalonSRX(RobotMap.rightmotor);
+	TalonSRX leftmotor = new TalonSRX(RobotMap.leftMotorA);
+	TalonSRX rightmotor = new TalonSRX(RobotMap.rightMotorA);
 	
     public void initDefaultCommand() {
     
