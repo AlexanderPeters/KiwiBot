@@ -6,6 +6,6 @@ package org.usfirst.frc.team3140.robot;
  * floating around.
  */
 public class RobotMap {
-	public static int leftmotor = 3; 
-	public static int rightmotor = 1; 
+	public static byte leftmotor = 3; 
+	public static byte rightmotor = 1; 
 }
