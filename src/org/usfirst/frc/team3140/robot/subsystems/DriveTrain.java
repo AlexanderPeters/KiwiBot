@@ -1,6 +1,7 @@
 package org.usfirst.frc.team3140.robot.subsystems;
 
 import org.usfirst.frc.team3140.robot.RobotMap;
+import org.usfirst.frc.team3140.robot.commands.Drive;
 
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.TalonSRX;
@@ -21,8 +22,7 @@ public class DriveTrain extends Subsystem {
 	private RobotDrive robotDrive = new RobotDrive(leftMotorA, leftMotorB, rightMotorA, rightMotorB);
 	
     public void initDefaultCommand() {
-        // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new Drive());
     }
     
     public void drive(double x, double y) {
