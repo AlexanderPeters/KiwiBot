@@ -18,10 +18,14 @@ public class DriveTrain extends Subsystem {
 	public TalonSRX leftMotorB = new TalonSRX(RobotMap.leftMotorB);
 	public TalonSRX rightMotorB = new TalonSRX(RobotMap.rightMotorB);
 	
-	public RobotDrive drive = new RobotDrive(leftMotorA, leftMotorB, rightMotorA, rightMotorB);
+	private RobotDrive robotDrive = new RobotDrive(leftMotorA, leftMotorB, rightMotorA, rightMotorB);
 	
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    }
+    
+    public void drive(double x, double y) {
+    	robotDrive.arcadeDrive(x, y, false);
     }
 }
